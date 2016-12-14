@@ -1,0 +1,220 @@
+a{
+    text-decoration: none;
+    font-family: "Calibri";
+    cursor:pointer;
+}
+.apps{
+    width:100%;
+    background-color: #f2ae65;
+    padding-left: 50px;
+}
+body{
+   background-image: url("bg2.jpg"); 
+    /*background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;*/
+}
+
+.header{
+background-image: url("bg3.jpg");
+    height:200px;
+    padding-bottom:50px;
+    padding-right: 50px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    z-index:1;
+}
+
+.hamburger-icon{
+    display:none;
+    width:20px;
+    border-radius:50%;
+    color:white;
+    background-color: #e2743d;
+    margin:10px 0 10px 30px;
+    text-align: center;
+}
+ @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){ .hamburger-icon { display: block;}}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #e2743d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family:"Calibri";
+}
+.hamburger-menu {
+    display: none;
+    margin-left:20px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family:"Calibri";
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom:1px solid #d85600;
+}
+.hamburger-menu a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    border-bottom:1px solid #d85600;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(240,240,240)}
+.hamburger-menu a:hover {background-color: rgb(240,240,240)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #f2d0b5;
+    color:#d85600;
+}
+
+#orange{
+    /*border-top-left-radius: 10px;*/
+background-color:#fca76f;
+       
+color:white;
+    text-shadow: 1px 1px black;
+/*border-top-right-radius: 10px;*/
+}
+/*#orangebor{
+    border:3px outset #E8581D;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}*/
+
+#settings{display:none;
+background-color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align:left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width:200px;
+    z-index:2;
+    line-height:3;
+    border-radius:10px;
+    padding-top: 15px;
+}
+#signout{display: none;
+background-color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+    z-index:2;
+    padding-right:10px;
+    color:black;
+    width:120px;
+    margin-left:160px;
+    text-align:left;
+    padding-left:20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius:10px;
+}
+
+table{
+    font-size:20px;
+    width:90%;
+    border:3px inset #f2d0b5;
+    border-radius: 10px;
+}
+td{
+    padding-left: 20px;
+}
+ul{
+    list-style-type: none;
+}
+#user{
+    text-align: right;
+    color: #fca76f;
+    font-size:16px;
+    margin-top:50px;
+}
+.whitener{
+    border: 10px outset rgb(255,255,255);
+    border-radius:20px;
+background-color:white;
+color:black;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top:50px;
+    margin-right:50px;
+}
+@media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 420px){ .apps { display: none;}}
+@media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 420px){ .whitener { margin-left: 10px;
+       margin-right:10px;
+       border-width:5px;}}
+@media only screen
+   and (min-device-width : 320px)
+    and (max-device-width : 420px){ #user { margin-top: 10px;}}
+
+@media only screen
+   and (min-device-width : 320px)
+    and (max-device-width : 420px){ .header { 
+        border-bottom: 3px solid #e2743d;
+        padding-right: 10px;}}
+
+@media only screen
+   and (min-device-width : 320px)
+    and (max-device-width : 420px){ #signout { 
+        margin-left:200px}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

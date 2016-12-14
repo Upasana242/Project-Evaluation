@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lister Digital App list</title>
+        <meta charset="utf-8"> 
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	   <link href="css/applist.css" rel="stylesheet"/>
+    </head>
+    <body>
+        
+        <div class="row header">
+        
+            <div class="col-md-3 col-sm-9">
+                <img src="img/ld.png" style="width:250px;margin-top:70px">
+            </div>
+            
+            <div class="col-md-6 col-sm-3"></div>              
+                                 
+            <div class="col-md-3 col-sm-12" id="user">
+                <span onclick="toggle_visibility1();">
+                <i class="fa fa-cog"></i></span>
+                Upasana Sengupta
+                <span onclick="toggle_visibility2();">
+                <i class="fa fa-caret-down"></i></span>
+                <div id="settings">
+                    <a>Change Password</a><br>
+                    <a>Add an account picture</a>
+                </div>
+                <div id="signout">
+                    <span style="font-size:36px;border-radius:50%;border:2px solid black;text-align:center">
+                    <i class="fa fa-user"></i></span>
+                    <a>Sign out</a>
+                </div>
+            </div>                 
+            </div>
+            
+        <!--The orange tab-->
+            <div class="row">
+                <div class="col-md-12 apps">
+                <div class="dropdown">
+                    <button class="dropbtn">Apps</button>
+                    <div class="dropdown-content">
+                        <a>List of apps</a>
+                        <a>Add an app</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+        <!--The hamburger-->
+            <div class="row">
+                <div class="hamburger-icon" onclick="toggle_visibility();">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="hamburger-menu">
+                    <a>List of apps</a>
+                    <a>Add an app</a>
+                </div>
+                                
+            </div>
+        <!--The main body-->
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-9">
+                    <div class="row whitener">
+                        <h1>List of apps</h1><br>
+                        <table>
+                            <tr><td id="orange">Lister Digital App</td></tr>
+                            <tr><td id="orangebor">App ID:112233</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+          
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> 
+        
+        <script type="text/javascript" src="js/applist.js"> 
+        </script>
+        
+    </body>
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+director@admin.nitdgp.ac.in
+registrar@admin.nitdgp.ac.in
+
+-->

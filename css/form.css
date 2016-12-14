@@ -1,0 +1,26 @@
+div{
+text-align:center;
+background-color:#F4F9FD;
+max-width:25%;
+border-style: solid;
+border-width: 1px;
+border-radius: 20px;
+margin:50px auto 20px auto;
+padding:10px 10px 10px 10px;
+box-shadow:15px 15px 5px #C4E5F8;
+}
+
+#validation1{
+color:red;
+display:none;
+}
+#validation3{
+color:red;
+display:none;
+}
+@media only screen
+   and (min-device-width : 320px)
+    and (max-device-width : 420px){div{max-width:90%;}}
+@media only screen
+   and (min-device-width : 320px)
+    and (max-device-width : 420px){body{background-position: center;}}
