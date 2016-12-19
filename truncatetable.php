@@ -9,10 +9,11 @@ if (!$conn) {
 }
 // Create database
 $db_selected = mysqli_select_db($conn,'my_db');
-$sql = "delete from MyGuests";
-
+//$sql = "delete from MyGuests";
+//$sql = "alter table states drop column status";
+$sql="delete from myguests where id=1";
 if (mysqli_query($conn, $sql)) {
-    echo "Table truncated";
+    echo "Row deleted";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

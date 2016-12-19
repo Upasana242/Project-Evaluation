@@ -8,7 +8,6 @@ $name =  "";
 $email =  "";
 $gender =  "";
 $comment =  "";
-$website = "";
 $flag=1;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"||$_SERVER["REQUEST_METHOD"] == "GET") {
@@ -24,12 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"||$_SERVER["REQUEST_METHOD"] == "GET") {
       $flag=0;
   } else {
     $email = test_input($_POST["email"]);
-  }
-
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
   }
 
   if (empty($_POST["comment"])) {
@@ -81,7 +74,9 @@ if (!mysqli_query($conn,"DESCRIBE MyGuests")) {
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 	name VARCHAR(30) NOT NULL,
 	email VARCHAR(50),
-	website VARCHAR(50),
+    countryid INT(1),
+    stateid INT(2),
+    cityid INT(2),
 	comments VARCHAR(150),
 	gender VARCHAR(6)
 	)";
@@ -91,9 +86,23 @@ if (!mysqli_query($conn,"DESCRIBE MyGuests")) {
 		echo "Error creating table: " . mysqli_error($conn);
 	}
 }
+if (!empty($_POST["country"])){
+    $country=$_POST["country"];
+}
+else {$country=0;}
 
-$sql = "INSERT INTO MyGuests (name, email, website, comments,gender)
-VALUES ('$name','$email','$website','$comment','$gender')";
+if (!empty($_POST["city"])){
+    $city=$_POST["city"];
+}
+else {$city=0;}
+    
+if (!empty($_POST["state"])){
+    $state=$_POST["state"];
+}
+else {$state=0;}
+    
+$sql = "INSERT INTO MyGuests (name, email, countryid, stateid, cityid, comments,gender)
+VALUES ('$name','$email','$country','$state','$city','$comment','$gender')";
 
 if (mysqli_query($conn, $sql)) {
     header('Location: formSubmitted.html');
